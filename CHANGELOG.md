@@ -6,5 +6,5 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Released]
 
-- V0.1.0
+- v0.1.0(2019-7-8)
     - Initial release

@@ -4,7 +4,7 @@ import axios, { AxiosInstance } from 'axios';
 export function activate(context: vscode.ExtensionContext) {
 
 	// 配置重启才会生效
-	let playURL: string = vscode.workspace.getConfiguration().get("goplay.playgroundurl") as string
+	let playURL: string = vscode.workspace.getConfiguration().get("goplay.playURL") as string
 	let withOutput: boolean = vscode.workspace.getConfiguration().get("goplay.withOutput") as boolean
 	let withImports: boolean = vscode.workspace.getConfiguration().get("goplay.withImports") as boolean
 	let withForceFmt: boolean = vscode.workspace.getConfiguration().get("goplay.withForceFmt") as boolean
