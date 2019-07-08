@@ -1,0 +1,101 @@
+{
+	"name": "goplay",
+	"displayName": "GoPlay",
+	"description": "Go Playground Helper, Run & Fmt & Share Go code by playground",
+	"publisher": "haozibi",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"Go",
+		"golang",
+		"Golang"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"icon": "images/icon.png",
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "GoPlay",
+			"properties": {
+				"goplay.playURL": {
+					"type": "string",
+					"default": "https://play.golang.org",
+					"enum": [
+						"https://play.golang.org",
+						"https://play.studygolang.com"
+					],
+					"description": "Playground URL"
+				},
+				"goplay.withOutput": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否输出附加到代码中"
+				},
+				"goplay.withImports": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否开启 imports，只有 fmt 时有效"
+				},
+				"goplay.withForceFmt": {
+					"type": "boolean",
+					"default": false,
+					"description": "是否在运行代码的时候强制 fmt"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.GoPlay.info",
+				"title": "GoPlay: Show Info"
+			},
+			{
+				"command": "extension.GoPlay.run",
+				"title": "GoPlay: Run Code"
+			},
+			{
+				"command": "extension.GoPlay.fmt",
+				"title": "GoPlay: Fmt Code"
+			},
+			{
+				"command": "extension.GoPlay.share",
+				"title": "GoPlay: Share Code"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/haozibi/goplay"
+	},
+	"homepage": "https://github.com/haozibi/goplay",
+	"bugs": {
+		"url": "https://github.com/haozibi/goplay/issues"
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.0-next.0"
+	},
+	"dependencies": {
+		"axios": "^0.19.0"
+	}
+}
