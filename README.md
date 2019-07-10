@@ -8,7 +8,7 @@ go-playground 助手
 
 ## 截图
 
-
+<img src=https://raw.githubusercontent.com/haozibi/goplay/master/images/demo.gif width=734 height=413>
 
 ## 安装
 

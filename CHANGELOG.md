@@ -6,5 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Released]
 
+- v0.1.1(2019-7-10)
+    - Fix: playground URL switch error
 - v0.1.0(2019-7-8)
     - Initial release

@@ -37,7 +37,7 @@ class GoPlay {
 		this.withImports = withImports
 		this.withForceFmt = withForceFmt
 
-		this.logger = vscode.window.createOutputChannel("goplay")
+		this.logger = vscode.window.createOutputChannel("GoPlay")
 		this.ax = axios.create({
 			baseURL: this.playURL,
 			timeout: 60000,
@@ -217,7 +217,7 @@ class GoPlay {
 	private initLog(methodName: string) {
 
 		if (!this.logger) {
-			this.logger = vscode.window.createOutputChannel('goplay')
+			this.logger = vscode.window.createOutputChannel('GoPlay')
 		}
 		this.logger.show()
 		this.logger.clear()
