@@ -3,7 +3,7 @@
 	"displayName": "GoPlay",
 	"description": "Go Playground Helper, Run & Fmt & Share Go code by playground",
 	"publisher": "haozibi",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
