@@ -2,6 +2,8 @@
 
 ![GoPlay](images/logo.png)
 
+[![Latest Release](https://vsmarketplacebadge.apphb.com/version/haozibi.goplay.svg?logo=visual-studio-code&color=blue)](https://marketplace.visualstudio.com/items?itemName=haozibi.goplay) [![Installs](https://vsmarketplacebadge.apphb.com/installs/haozibi.goplay.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=haozibi.goplay) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/haozibi.goplay.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=haozibi.goplay) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/haozibi.goplay.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=haozibi.goplay#review-details)
+
 go-playground 助手
 
 可以方便运行、格式化和分享 Go 代码，可以实现没有 Go 环境运行 Go 代码。
@@ -19,15 +21,17 @@ go-playground 助手
 `cmd + shift + p` OR `command + p` 然后输入命令
 
 - Run
-    - 命令: `> GoPlay: Run Code`
+    - 命令: `GoPlay: Run Code`
 - Fmt
-    - 命令: `> GoPlay: Fmt Code`
+    - 命令: `GoPlay: Fmt Code`
 - Share
-    - 命令: `> GoPlay: Share Code`
+    - 命令: `GoPlay: Share Code`
 - Info
-    - 命令: `> GoPlay: Show Info`
+    - 命令: `GoPlay: Show Info`
 
 ## 配置项
+
+*配置项需要重启 VSCode 才能生效*
 
 - playURL
     - 描述: Playground URL
